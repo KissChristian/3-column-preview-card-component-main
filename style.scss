@@ -75,6 +75,7 @@ body {
 
 
 @media (max-width:768px){
+  
     main{
         display: grid;
         grid-template-columns:100%;
@@ -109,5 +110,11 @@ body {
     .box{
 
         height: 500px;
+    }
+    .box-one {
+        border-radius: 0.9375rem  0 0 0.9375rem ;
+    }
+    .box-three {
+        border-radius: 0 0.9375rem  0.9375rem 0;
     }
 }
