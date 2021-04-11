@@ -4,7 +4,6 @@
     padding: 0;
 }
 body {
-    max-width: 1440px ;
     height: 100vh;
     background-color:hsl(0, 0%, 95%) ;
     font-size: 0.9375rem;
@@ -23,6 +22,8 @@ body {
 .box-three_color {
     background-color:hsl(179, 100%, 13%) ;
 }
+
+
 
 .box {
     display: flex;
@@ -52,20 +53,35 @@ body {
     width: 150px;
     height: 48px;
     border-radius: 50px;
-    background-color:hsla(0, 0%, 100%, 0.75)
+    background-color:hsla(0, 0%, 100%, 0.75) 
+}
+
+.button:hover{
+    color:hsla(0, 0%, 100%, 0.75) ;
+    border: 3px solid hsla(0, 0%, 100%, 0.75) ;
+    padding:12px;
+}
+.button-one_color{
+    color:hsl(31, 77%, 52%) ;
+}
+.button-two_color{
+   color: hsl(184, 100%, 22%) ;
+}
+.button-three_color{
+    color:hsl(179, 100%, 13%) ;
 }
 }
 
 
 
-@media (min-width:375px){
+@media (max-width:768px){
     main{
         display: grid;
-        grid-template-columns:375px;
-        grid-template-rows: 1fr 1fr 1fr;;
-        margin: 80px 12px;
+        grid-template-columns:100%;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin: 80px 6.666666666666667%;
      .box{
-        width: 325px;
+
         height: 440px;
     }
    
@@ -78,4 +94,20 @@ body {
     }
    
 }   
+@media (min-width:1024px){
+    body{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+    main{
+        width: 919px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .box{
 
+        height: 500px;
+    }
+}
