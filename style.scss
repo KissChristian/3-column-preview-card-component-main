@@ -61,10 +61,9 @@ body {
 @media (min-width:375px){
     main{
         display: grid;
-        
-        grid-template-columns:100%;
-        grid-template-areas: 1fr 1fr 1fr;;
-        padding: 80px 25px;
+        grid-template-columns:375px;
+        grid-template-rows: 1fr 1fr 1fr;;
+        margin: 80px 12px;
      .box{
         width: 325px;
         height: 440px;

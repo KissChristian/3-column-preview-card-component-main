@@ -69,10 +69,11 @@ body {
   main {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-        grid-template-areas: 1fr 1fr 1fr;
-    padding: 80px 25px;
+    -ms-grid-columns: 375px;
+        grid-template-columns: 375px;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    margin: 80px 12px;
   }
   main .box {
     width: 325px;
