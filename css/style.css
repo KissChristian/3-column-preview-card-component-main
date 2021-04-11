@@ -43,18 +43,22 @@ body {
 }
 
 .box .title {
+  font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.75);
+  font-family: 'Big Shoulders Display', curve;
 }
 
 .box .text {
   font-weight: 400;
   color: rgba(255, 255, 255, 0.75);
+  font-family: 'Lexend Deca', sans-serif;
+  line-height: 20px;
 }
 
 .box .button {
-  text-transform: uppercase;
+  font-family: 'Lexend Deca', sans-serif;
   text-align: center;
   cursor: pointer;
   padding: 15px 0;
@@ -82,7 +86,7 @@ body {
   color: #004241;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   main {
     display: -ms-grid;
     display: grid;
@@ -92,8 +96,11 @@ body {
         grid-template-rows: 1fr 1fr 1fr;
     margin: 80px 6.666666666666667%;
   }
-  main .box {
+  .box {
     height: 440px;
+  }
+  .text {
+    width: 226px;
   }
   .box-one {
     border-radius: 0.9375rem 0.9375rem 0 0;
@@ -122,6 +129,9 @@ body {
   }
   .box {
     height: 500px;
+  }
+  .text {
+    width: 198px;
   }
   .box-one {
     border-radius: 0.9375rem  0 0 0.9375rem;

@@ -35,18 +35,21 @@ body {
     height: 2.5rem;
 }
 .title {
+    font-size: 36px;
     font-weight: 700;
     text-transform: uppercase;
-    color:hsla(0, 0%, 100%, 0.75)
-
+    color:hsla(0, 0%, 100%, 0.75);
+    font-family: 'Big Shoulders Display', curve;
 }
 .text{
-    font-weight: 400;
-    color:hsla(0, 0%, 100%, 0.75)
+    font-weight:  400;
+    color:hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 20px;
 }
 
 .button{
-    text-transform: uppercase;
+    font-family: 'Lexend Deca', sans-serif;
     text-align: center;
     cursor: pointer;
     padding: 15px 0;
@@ -74,18 +77,17 @@ body {
 
 
 
-@media (max-width:768px){
+@media (max-width:1023px){
   
     main{
         display: grid;
         grid-template-columns:100%;
         grid-template-rows: 1fr 1fr 1fr;
-        margin: 80px 6.666666666666667%;
+        margin: 80px 6.666666666666667%;}
      .box{
-
         height: 440px;
     }
-   
+    .text{width: 226px;
     }  
     .box-one {
         border-radius: 0.9375rem 0.9375rem 0 0 ;
@@ -104,17 +106,19 @@ body {
     main{
         width: 919px;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;}
+
+        .box{  
+            height: 500px;
+        }
+        .text{
+            width: 198px;
+        }
+        .box-one {
+            border-radius: 0.9375rem  0 0 0.9375rem ;
+        }
+        .box-three {
+            border-radius: 0 0.9375rem  0.9375rem 0;
+        }    
         
     }
-    .box{
-            
-        height: 500px;
-    }
-    .box-one {
-        border-radius: 0.9375rem  0 0 0.9375rem ;
-    }
-    .box-three {
-        border-radius: 0 0.9375rem  0.9375rem 0;
-    }
-}
